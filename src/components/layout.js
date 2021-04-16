@@ -14,12 +14,14 @@ const Layout = ({ location, title, children, lang }) => {
   const isRootPath = location.pathname === rootPath
   let header
 
+  
 
   if (isRootPath) {
     header = (
       <>
+
         <h1 className="main-heading">
-          <Link to="/">{title}</Link>
+          <Link to="/">Amanda Ordóñez</Link>
         </h1>
         <Navbar />
 
@@ -28,8 +30,9 @@ const Layout = ({ location, title, children, lang }) => {
   } else {
     header = (
       <>
+ 
         <Link className="header-link-home" to="/">
-          {title}
+          Amanda Ordóñez
         </Link>
         <Navbar />
 

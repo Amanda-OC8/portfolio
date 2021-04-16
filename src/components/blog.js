@@ -24,6 +24,8 @@ const Blog = ({ posts, lang }) => {
         date = template.replace(/#(\w+)/g, match => months[month] || match);
     }
 
+    console.log(post.frontmatter.cv)
+
     return (
         <>
             <SEO
@@ -36,12 +38,13 @@ const Blog = ({ posts, lang }) => {
             itemType="http://schema.org/Article"
         >
             <header>
-                <h1 itemProp="headline">{post.frontmatter.title}</h1>
-                <p>{date}</p>
+                    <h1 itemProp="headline">{post.frontmatter.cv ? 'Amanda Ordoñez' : post.frontmatter.title}</h1>
+                    <p>{!post.frontmatter.cv ? date : null}</p>
             </header>
             <section
                 dangerouslySetInnerHTML={{ __html: post.html }}
-                itemProp="articleBody"
+                    itemProp="articleBody"
+                    className={post.frontmatter.cv ? 'cv' : null}
             />
             <hr />
 

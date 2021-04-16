@@ -11,12 +11,13 @@ defaultLang: ENG
 cv: false
 ---
 
-"Why did the chicken cross the road?" was my first project in web development during one week with Pedro Conde.
+"Why did the chicken cross the road?" was my first project from the Iron Hack Bootcamp of web development during one week with Pedro Conde.
 
 ![Start screen](./start-screen.png)*To get to the other side*
 
-This was my first approach to game development and for these reason I choose a frogger-like game. I only need to determinate the colission create a random line of obstacles.
-One of the problems I found is the the graphic part. The game have an aerial 2D perspective and mostly of the sprites I found of chickens are lateral 2D perspective. Finally I made a simple bouncing animation using an image and piskel to make the effect. I can changed the chicken image, but the title pun will lost.
+This was my first approach to game development and for this reason I choose a frogger-like game because it is only necessary considerate the trajectories of obstacles along one axis. This reduces the complexity of the movements. I used a 2D environment for simplicity and because is one of the project conditions.
+
+One of the principal problems I found was the graphic design and creation. The game has an aerial 2D perspective and mostly of the sprites of chickens for animate that I found had a lateral 2D perspective. I used as solution a simply and handmade animation of bouncing, using a static picture and the free software [piskel](https://www.piskelapp.com/). I can change the chicken image, but the title's pun will be lost.
 
 <figure style="text-align: center">
      <img
@@ -27,8 +28,10 @@ One of the problems I found is the the graphic part. The game have an aerial 2D 
     <figcaption>Gameplay example.</figcaption>
 </figure>
 
-The game has different features as the two local player cooperative mode. You can choose at start if you want to play one or two player, and choose the chick or the chicken to try to cross. A difficult selector has planned but I not have had enough testing time to implement. The game has different finals that change with the player.
+How the game has a simple mechanic, without jumps and lines of obstacles, I added other elements, like a two local multiplayer mode. Also, you can choose the character and their controls. A difficult selector was planned, but the testing phase was longer than expected and this can't be implemented for the lack of time but the game was designed with the idea that the number of lines of obstacles and their velocity can be changed.
 
-The game is online and you can [play for free](https://amanda-oc8.github.io/Why-did-the-chicken-cross-the-road/). You also can check the code on my [github page](https://github.com/Amanda-OC8/Why-did-the-chicken-cross-the-road)
+Other feature of the game is the music. The game has music as background loop, sound effect and victory and game over music. Also, the game has different win screens, that varies with the character and the number of players.
+
+The game is online and you can [play for free](https://amanda-oc8.github.io/Why-did-the-chicken-cross-the-road/). You also can check the code on my [github page](https://github.com/Amanda-OC8/Why-did-the-chicken-cross-the-road). Although it was a small and simple project, I'm very proud of the result of my first approach on the game design and the we development.
 
 ###### Technologies: Canvas2D, HTML5, CSS3, JS

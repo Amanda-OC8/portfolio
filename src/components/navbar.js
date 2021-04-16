@@ -32,39 +32,39 @@ const Navbar = () => {
                 {lang => (
                     <>
                         {!breakpoints.xs || !breakpoints.sm ?
-                            (<div className='navbar-button'>
-                                <button className='toggle'
-                                    navbarOpen={navbarOpen}
-                                    onClick={() => setNavbarOpen(!navbarOpen)}
-                                >
-                                    {navbarOpen ? (
-                                        <div className="navbar">
+                            (<>
+
+                                <ul className='lang'><li> <button
+                                    className={lang.defaultLang ? 'lang-button disabled-button' : 'lang-button'}
+                                    onClick={lang.toggleLang}
+                                >ENG</button>/<button
+                                    className={lang.defaultLang ? 'lang-button' : 'lang-button  disabled-button'}
+                                    onClick={lang.toggleLang}
+                                >{lang.defaultLang ? 'SPA' : 'ESP'}</button></li>
+                                </ul>
+                                <div className='navbar-button'>
+                                    <button className='toggle'
+                                        navbarOpen={navbarOpen}
+                                        onClick={() => setNavbarOpen(!navbarOpen)}
+                                    >
+                                        <nav >
                                             <Image fixed={burguer} className='burguer' />
-                                            <nav >
+                                            
+                                            {navbarOpen ? (
                                                 <ul>
-                                                    <li><Link to="/">{lang.defaultLang ? 'Home' : 'Inicio'}</Link></li>
                                                     <li><Link to="/CV/#bio-extend"> {lang.defaultLang ? "About me" : "Sobre mi"}</Link></li>
                                                     <li><Link to="/#projects">{lang.defaultLang ? 'Projects' : 'Proyectos'}</Link></li>
-                                                    <li> <button
-                                                        className={lang.defaultLang ? 'lang-button disabled-button' : 'lang-button'}
-                                                        onClick={lang.toggleLang}
-                                                    >ENG</button>/<button
-                                                        className={lang.defaultLang ? 'lang-button' : 'lang-button  disabled-button'}
-                                                        onClick={lang.toggleLang}
-                                                    >{lang.defaultLang ? 'SPA' : 'ESP'}</button></li>
                                                 </ul>
-                                            </nav>
-                                        </div>
-                                    ) : <Image fixed={burguer} className='burguer' />}
-                                </button>
-                            </div>)
+                                            ) : <ul className='hide'></ul>}
+                                            
+                                        </nav>
+                                    </button>
+                                </div>
+                            </>)
                             :
                             (
                                 <nav>
                                     <ul>
-                                        <li><Link to="/">{lang.defaultLang ? 'Home' : 'Inicio'}</Link></li>
-                                        <li><Link to="/CV/#bio-extend"> {lang.defaultLang ? "About me" : "Sobre mi"}</Link></li>
-                                        <li><Link to="/#projects">{lang.defaultLang ? 'Projects' : 'Proyectos'}</Link></li>
                                         <li>
                                             <button
                                                 className={lang.defaultLang ? 'lang-button disabled-button' : 'lang-button'}
@@ -72,8 +72,10 @@ const Navbar = () => {
                                             >ENG</button>/<button
                                                 className={lang.defaultLang ? 'lang-button' : 'lang-button  disabled-button'}
                                                 onClick={lang.toggleLang}
-                                            >{lang.defaultLang ? 'SPA' : 'ESP'}</button></li>
-
+                                            >{lang.defaultLang ? 'SPA' : 'ESP'}</button>
+                                        </li>
+                                        <li><Link to="/CV/#bio-extend"> {lang.defaultLang ? "About me" : "Sobre mi"}</Link></li>
+                                        <li><Link to="/#projects">{lang.defaultLang ? 'Projects' : 'Proyectos'}</Link></li>
                                     </ul>
                                 </nav>
                             )}

@@ -11,7 +11,7 @@ const PostList = ({ data, lang }) => {
     } else {
         posts = data.allMarkdownRemark.nodes.filter(elm => elm.frontmatter.defaultLang === "SPA")
     }
-    console.log(posts)
+    
    
 
     return (
@@ -40,7 +40,7 @@ const PostList = ({ data, lang }) => {
                     const regex = /[\$\^\/\\]/g;
                     const slugName = post.fields.slug.substring(1)
                     const globalSlug = post.fields.slug.substring(0, slugName.search(regex) + 2)
-
+                    console.log(slugName)
                     return (
                         <li key={globalSlug}>
                             <article

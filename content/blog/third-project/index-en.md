@@ -20,4 +20,6 @@ Other complex element was developed the tree content of each project, to show ea
 
 The model for the projects were made thinking on the most diverse type of projects. We considered the creation of role campaigns, long stories, short stories, comic's scripts, video games' scripts... We also had in consideration that a project maybe have multiple genre and for this reason the athour indicates the main genre and add taglines to specificy the others elements. These taglines are based on [AO3](https://archiveofourown.org/) tag system and the idea is that the users can filter using the tags (and the genre, type of project...)
 
+AS other projects, we work using Bootstrap as base for the dimensions but modifyng some elements, like the buttons. We design the app for web use, and for these reason we didn't focus on the responsive design.
+
 ###### Technologies: CSS3, Node.js, React, MongoDB, React-Bootstrap, Express

@@ -46,7 +46,14 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
+        plugins: [{
+          resolve: "gatsby-plugin-react-svg",
+          options: {
+            rule: {
+              include: /assets/ // See below to configure properly
+            }
+          }
+        },
           {
             resolve: `gatsby-remark-image-attributes`,
             options: {
