@@ -37,10 +37,10 @@ const PostList = ({ data, lang }) => {
                     }
                     
                     // Create the slug for the two languages: get both to filter
-                    const regex = /[\$\^\/\\]/g;
+                    const regex = /[$^/\\]/g;
                     const slugName = post.fields.slug.substring(1)
                     const globalSlug = post.fields.slug.substring(0, slugName.search(regex) + 2)
-                    console.log(slugName)
+                   
                     return (
                         <li key={globalSlug}>
                             <article

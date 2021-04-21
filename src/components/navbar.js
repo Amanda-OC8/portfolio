@@ -32,8 +32,7 @@ const Navbar = () => {
                 {lang => (
                     <>
                         {!breakpoints.xs || !breakpoints.sm ?
-                            (<>
-
+                            (<div>
                                 <ul className='lang'><li> <button
                                     className={lang.defaultLang ? 'lang-button disabled-button' : 'lang-button'}
                                     onClick={lang.toggleLang}
@@ -42,9 +41,9 @@ const Navbar = () => {
                                     onClick={lang.toggleLang}
                                 >{lang.defaultLang ? 'SPA' : 'ESP'}</button></li>
                                 </ul>
-                                <div className='navbar-button'>
+                                
                                     <button className='toggle'
-                                        navbarOpen={navbarOpen}
+                                    navbaropen={navbarOpen ? 1 : 0}
                                         onClick={() => setNavbarOpen(!navbarOpen)}
                                     >
                                         <nav >
@@ -59,8 +58,7 @@ const Navbar = () => {
                                             
                                         </nav>
                                     </button>
-                                </div>
-                            </>)
+                            </div>)
                             :
                             (
                                 <nav>
