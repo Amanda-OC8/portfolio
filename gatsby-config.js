@@ -22,9 +22,6 @@ module.exports = {
     },
     keywords: ["portfolio", "html", "css", "js", "react", "front-end", "back-end"]
   },
-  flags: {
-    DEV_SSR: false,
-  },
   plugins: [
     {
       resolve: "gatsby-plugin-breakpoints",
@@ -49,8 +46,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          {
+        plugins: [{
             resolve: `gatsby-remark-image-attributes`,
             options: {
 

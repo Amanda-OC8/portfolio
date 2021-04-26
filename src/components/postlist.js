@@ -40,7 +40,7 @@ const PostList = ({ data, lang }) => {
                     const regex = /[$^/\\]/g;
                     const slugName = post.fields.slug.substring(1)
                     const globalSlug = post.fields.slug.substring(0, slugName.search(regex) + 2)
-                   
+                    
                     return (
                         <li key={globalSlug}>
                             <article

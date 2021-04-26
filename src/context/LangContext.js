@@ -19,14 +19,7 @@ class LangProvider extends React.Component {
         this.setState({ defaultLang })
     }
 
-    componentDidMount() {
-        // Getting default value from localStorage!
-        const lslang = JSON.parse(localStorage.getItem("defaultLang"))
-        if (lslang) {
-            this.setState({ defaultLang: lslang })
-        } 
-             }
-
+   
     render() {
         const { children } = this.props
         const { defaultLang } = this.state

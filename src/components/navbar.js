@@ -41,23 +41,23 @@ const Navbar = () => {
                                     onClick={lang.toggleLang}
                                 >{lang.defaultLang ? 'SPA' : 'ESP'}</button></li>
                                 </ul>
-                                
-                                    <button className='toggle'
+
+                                <button className='toggle'
                                     navbaropen={navbarOpen ? 1 : 0}
-                                        onClick={() => setNavbarOpen(!navbarOpen)}
-                                    >
-                                        <nav >
-                                            <Image fixed={burguer} className='burguer' />
-                                            
-                                            {navbarOpen ? (
-                                                <ul>
-                                                    <li><Link to="/CV/#bio-extend"> {lang.defaultLang ? "About me" : "Sobre mi"}</Link></li>
-                                                    <li><Link to="/#projects">{lang.defaultLang ? 'Projects' : 'Proyectos'}</Link></li>
-                                                </ul>
-                                            ) : <ul className='hide'></ul>}
-                                            
-                                        </nav>
-                                    </button>
+                                    onClick={() => setNavbarOpen(!navbarOpen)}
+                                >
+                                    <nav >
+                                        <Image fixed={burguer} className='burguer' />
+
+                                        {navbarOpen ? (
+                                            <ul>
+                                                <li><Link to="/CV/#bio-extend"> {lang.defaultLang ? "About me" : "Sobre mi"}</Link></li>
+                                                <li><Link to="/#projects">{lang.defaultLang ? 'Projects' : 'Proyectos'}</Link></li>
+                                            </ul>
+                                        ) : <ul className='hide'></ul>}
+
+                                    </nav>
+                                </button>
                             </div>)
                             :
                             (

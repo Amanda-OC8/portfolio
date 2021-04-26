@@ -5,12 +5,12 @@ description: Portfolio
 summary: A portfolio-web to experiment and resume my jobs as web developer using a gatsby template.
 keywords: [Gatsby, Markdown, CSS3]
 featuredimage:
-  src: "./start-en.PNG"
+  src: "./recursive-en1.PNG"
   alt: "The home page"
 defaultLang: ENG
 cv: false
 ---
-From a React's Course, I learned about Gatsby, and I wanted to work on my own with the framework. I used a template from the gatsby web page to have a base with the front-end. I like to work with front-end libraries like boostrap to focus on the development of others elements before than general structure and distribution. One of these elements is the color scheme. I choosed a color scheme without big contrast between dark and light colors to avoid a dark mode and that be suitable for colour blind people. I used [coolors.co](coolors.co) as always.
+From a React's Course, I learned about Gatsby, and I wanted to work on my own with the framework. I used a template from the gatsby web page to have a base with the front-end. I like to work with front-end libraries like boostrap to focus on the development of others elements before than general structure and distribution. One of these elements is the color scheme. I choosed a color scheme without big contrast between dark and light colors to avoid a dark mode and that be suitable for colour blind people. I used [coolors.co](https://coolors.co/) as always.
 
 I choosed the gatsby-blog template, not the portfolio-dev because this work using an external CMS and I already worked with one on the course. The gastby blog works with the Markdown technology and I was curious about them and I thought that was a great opportunity to wrk with it. However, I used the portfolio as base for the structure, because if it ain't broken don't fix it.
 

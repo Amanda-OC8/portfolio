@@ -24,7 +24,7 @@ const Blog = ({ posts, lang }) => {
         date = template.replace(/#(\w+)/g, match => months[month] || match);
     }
 
-
+    
 
     return (
         <>

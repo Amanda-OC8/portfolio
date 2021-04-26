@@ -81,7 +81,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  font-size: var(--fontSize-1);
+  font-size: var(--fontSize-2);
   color: var(--charcoal);
   background-color: var(--mint-cream);
 }
@@ -98,9 +98,7 @@ footer {
   color: var(--mint-cream);
   background-color: var(--castleton-green);
   grid-area: footer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 footer > a{
   color: var(--silver-sand);
@@ -138,7 +136,7 @@ h5 {
 h1 {
   font-weight: var(--fontWeight-black);
   font-size: var(--fontSize-6);
-  color: var(--dark-jungle-green);
+  color: var(--castleton-green);
 }
 
 h2 {
@@ -309,6 +307,7 @@ height: 90vw;
   font-size: var(--fontSize-7);
   margin: 0;
   padding-right: 8px;
+  color: var(--dark-jungle-green)
 }
 
 .post-list-item {
@@ -439,7 +438,6 @@ nav li, .lang li {
 nav a {
   color:var(--dark-jungle-green);
   text-decoration: none;
-  font-size: var(--fontSize-1);
   line-height: var(--lineHeight-relaxed);
 }
 .burguer{
