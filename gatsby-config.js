@@ -15,7 +15,7 @@ module.exports = {
       summarySPA: `que empieza una nueva carrera como desarrolladora web tras años como investigadora en el campo del magnetismo espacial.`,
     },
     description: `A portfolio using gatbsy.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    siteUrl: `https://amanda-portfolio.netlify.app/`,
     social: {
       github: `Amanda-OC8`,
       linkedin:`amanda-ordonez-cencerrado`
@@ -47,35 +47,35 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [{
-            resolve: `gatsby-remark-image-attributes`,
-            options: {
+          resolve: `gatsby-remark-image-attributes`,
+          options: {
 
-              // ?Boolean=true
-              //   If true (the default), all CSS
-              //   property names will be recognized
-              //   as styleAttribute.
-              styleAttributes: true,
+            // ?Boolean=true
+            //   If true (the default), all CSS
+            //   property names will be recognized
+            //   as styleAttribute.
+            styleAttributes: true,
 
-              // ?Boolean=false
-              //   If true, all attributes that
-              //   aren't styleAttributes, will be
-              //   added as data-* attributes to the
-              //   image.
-              dataAttributes: false
-            }
+            // ?Boolean=false
+            //   If true, all attributes that
+            //   aren't styleAttributes, will be
+            //   added as data-* attributes to the
+            //   image.
+            dataAttributes: false
+          }
+        },
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            maxWidth: 630,
           },
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 630,
-            },
+        },
+        {
+          resolve: `gatsby-remark-responsive-iframe`,
+          options: {
+            wrapperStyle: `margin-bottom: 1.0725rem`,
           },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
+        },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
@@ -94,13 +94,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Amanda Ordóñez's Portfolio`,
+        short_name: `Gatsby-Portfolio`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon.svg`,
       },
     },
     `gatsby-plugin-react-helmet`,

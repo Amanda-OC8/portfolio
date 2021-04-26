@@ -36,9 +36,11 @@ const Navbar = () => {
                                 <ul className='lang'><li> <button
                                     className={lang.defaultLang ? 'lang-button disabled-button' : 'lang-button'}
                                     onClick={lang.toggleLang}
+                                    aria-label='switch-lang'
                                 >ENG</button>/<button
                                     className={lang.defaultLang ? 'lang-button' : 'lang-button  disabled-button'}
-                                    onClick={lang.toggleLang}
+                                        onClick={lang.toggleLang}
+                                        aria-label='switch-lang'
                                 >{lang.defaultLang ? 'SPA' : 'ESP'}</button></li>
                                 </ul>
 
@@ -47,7 +49,7 @@ const Navbar = () => {
                                     onClick={() => setNavbarOpen(!navbarOpen)}
                                 >
                                     <nav >
-                                        <Image fixed={burguer} className='burguer' />
+                                        <Image fixed={burguer} className='burguer' aria-label='toggle-menu'/>
 
                                         {navbarOpen ? (
                                             <ul>
@@ -67,9 +69,11 @@ const Navbar = () => {
                                             <button
                                                 className={lang.defaultLang ? 'lang-button disabled-button' : 'lang-button'}
                                                 onClick={lang.toggleLang}
+                                                aria-label='switch-lang'
                                             >ENG</button>/<button
                                                 className={lang.defaultLang ? 'lang-button' : 'lang-button  disabled-button'}
                                                 onClick={lang.toggleLang}
+                                                aria-label='switch-lang'
                                             >{lang.defaultLang ? 'SPA' : 'ESP'}</button>
                                         </li>
                                         <li><Link to="/CV/#bio-extend"> {lang.defaultLang ? "About me" : "Sobre mi"}</Link></li>

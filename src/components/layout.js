@@ -41,12 +41,13 @@ const Layout = ({ location, title, children, lang }) => {
     )
   }
 
+
   return (
     
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Amanda Ordóñez's Portfolio</title>
+        <title>{title}</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Bitter:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap" rel="stylesheet" />
       </Helmet>
@@ -56,7 +57,7 @@ const Layout = ({ location, title, children, lang }) => {
         <Scroll showBelow={150} />
       </main>
       <footer>
-        © {new Date().getFullYear()}, by Amanda Ordóñez. Built with Gatsby.
+        © {new Date().getFullYear()}, by Amanda Ordóñez. Built with Gatsby. 
       </footer>
     </div>
         
