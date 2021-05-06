@@ -16,6 +16,8 @@ Index:
 * [Work Experience](#work)
 * [Scientific and Technical publications](#publications)
 
+You can download a short version on [pdf](CV_Amanda_Ordonez.pdf).
+
 <div id='bio-extend'>Detailed Bio</div>
 ---
 

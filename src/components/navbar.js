@@ -53,7 +53,7 @@ const Navbar = () => {
 
                                         {navbarOpen ? (
                                             <ul>
-                                                <li><Link to="/CV/#bio-extend"> {lang.defaultLang ? "About me" : "Sobre mi"}</Link></li>
+                                                <li><Link to="/CV"> {lang.defaultLang ? "About me" : "Sobre mi"}</Link></li>
                                                 <li><Link to="/#projects">{lang.defaultLang ? 'Projects' : 'Proyectos'}</Link></li>
                                             </ul>
                                         ) : <ul className='hide'></ul>}
@@ -76,7 +76,7 @@ const Navbar = () => {
                                                 aria-label='switch-lang'
                                             >{lang.defaultLang ? 'SPA' : 'ESP'}</button>
                                         </li>
-                                        <li><Link to="/CV/#bio-extend"> {lang.defaultLang ? "About me" : "Sobre mi"}</Link></li>
+                                        <li><Link to="/CV"> {lang.defaultLang ? "About me" : "Sobre mi"}</Link></li>
                                         <li><Link to="/#projects">{lang.defaultLang ? 'Projects' : 'Proyectos'}</Link></li>
                                     </ul>
                                 </nav>

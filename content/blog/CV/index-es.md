@@ -16,6 +16,8 @@ cv: true
 * [Experiencia laboral](#work)
 * [Publicaciones científico-técnicas](#publications)
 
+Puedes descargar una versión resumida en [pdf](CV_Amanda_Ordonez-ES.pdf).
+
 <div id='bio-extend'>Bio detallada</div>
 ---
 

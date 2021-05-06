@@ -350,6 +350,7 @@ span + em {
 .bio {
   display: flex;
   margin-bottom: var(--spacing-16);
+  align-items: center;
 }
 
 .bio p {
@@ -359,7 +360,7 @@ span + em {
 .bio-avatar {
   margin-right: var(--spacing-4);
   margin-bottom: var(--spacing-0);
-  min-width: 50px;
+  min-width: 100px;
   border-radius: 100%;
 }
 
